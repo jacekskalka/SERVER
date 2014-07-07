@@ -1,0 +1,79 @@
+html { background-color : black;text-align : justify; font-family: Verdana,Arial,Helvetica,sans-serif;
+ }
+#wrapper {  width: 900px; margin: 5px auto; /* center */ 
+		/* background-color : #e5dec7;*/
+		background-color : black; color : white;
+		border : 1px solid white; min-height : 800px; 
+		 }
+nav { background-image : url('resources/widgets/menuBg.jpg'); background-repeat : repeat-x;width:900px;height:40px; }
+nav ul { list-style:none;float:left; height:40px; width : 450px;  }		 
+nav li { float : left; margin-left : 30px;margin-top : 10px; }
+nav ul li  a { display : block; color : white; text-align : center;text-decoration : none;}
+/*
+#nav li + li {
+    background:url('resources/widgets/separator.jpg') no-repeat top left;
+    padding-left: 10px;} */
+#info { text-align : center;color : red; font-size : 18px;margin-bottom : 5px; }
+ hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid yellow;;
+    margin: 1em 0; padding: 0; } 
+
+#oNas { margin : 10px; } 
+ #opis1 { margin :15px; margin-right : 40px; }
+ #opis2 { margin :15px; margin-right : 40px; width :325px;  }
+.imgFront { margin :20px; }
+h1 { color : red; font-size : 17px; text-align : center;}
+#gallery img, #gallery {  }
+p {font-size : 15px;}
+h5 { font-size : 18px; color : yellow; }
+#footer  { margin-left : auto; margin-right:auto;  }
+
+/*CENNIK*/
+#cennik { width : 70%; border : 1px solid white;border-collapse:collapse; margin-left : auto; margin-right:auto;}
+#cennik td , #cennik { border: 1px solid black; padding : 20px; color : black; background-color :#FFFFFF; text-align : center;}
+#cennik th { padding : 10px; background-color : #21709C;text-align : center; }
+
+#download  {
+	-moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9dce2c), color-stop(1, #8cb82b) );
+	background:-moz-linear-gradient( center top, #9dce2c 5%, #8cb82b 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+	background-color:#9dce2c;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #83c41a;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #689324;
+}
+#download :hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+	background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+	background-color:#8cb82b;}
+#download :active {
+	position:relative;
+	top:1px;
+}

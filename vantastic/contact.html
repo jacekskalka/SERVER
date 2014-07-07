@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<title>Welcome to Vintage Vantatic</title>
+<link href="resources/reset.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+
+<body>
+<header> 
+  <img class="logo" src="resources/widgets/phoneTop.png" style = "float:right; "/>     
+  <img class="logo" src="resources/widgets/logoRed.png" style = "float : left; width : 350px; height:80px; padding:0px; margin : 0px; "/>  
+</header>
+<div id="wrapper">
+<nav>
+	<section id="flags">
+	<a href="" ><img src="resources/widgets/great_britain2.png"/></a>
+	<a href="" ><img src="resources/widgets/poland2.png"/></a>
+	<a href="" ><img src="resources/widgets/italy2.png"/></a>
+	</section>
+	<ul>
+	<li><a href="index.html" >Home</a></li>
+	<li><a href="about.html" >About us</a></li>
+	<li><a href="forsale.html" >Vans for sale</a></li>
+	<li><a href="gallery.html" >Gallery</a></li>
+	<li><a href="contact.html" >Contact us</a></li>
+	</ul>
+</nav>
+<article>
+	<section class="tekst" style="font-size:13px">
+
+	<form action="thankyou.php" method="POST">
+	<table>
+	<tr>
+	<td> Name </td>
+	<td><input type="text" name="name" required/> </td>
+	</tr>
+	<tr>
+	<td>Email</td>
+	<td><input type="email" name="email" required/></td>
+	</tr>
+	<tr>
+	<td>Phone</td>
+	<td><input type="text" name="phone" required/></td>
+	</tr>
+	<tr>
+	<td>Query</td>
+	<td><textarea rows="10" cols="50" name="query" required></textarea></td>
+	</tr>
+	<tr>
+	<td> <canvas id="myCanvas" width="150" height="40" style="border:1px solid red;margin-bottom:-10px;"> </canvas> </td>
+	<td> <input id="target" type="text" name="capcha"/></td>
+	</tr>	
+	<tr>
+	<td></td>
+	<td><input id="submit" type="submit" value="submit"/></td>
+	</tr>
+	</table>
+	
+	</form>
+	
+	</section>
+</article>
+<footer>
+	
+	<p>copyright 2014</p>
+</footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+number = Math.floor((Math.random() * 1000000) + 1);
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillStyle = "white";
+ctx.fillText(number,15,30);
+
+document.getElementById("submit").disabled=true;
+
+$( "#target" ).keyup(function() {
+  var val = $( "#target" ).val();
+  if(val == number){ $( "#submit" ).removeAttr('disabled');$( "#submit" ).css('background-color','#3FEB21'); }
+});
+
+
+</script>
+</body>
+</html>
